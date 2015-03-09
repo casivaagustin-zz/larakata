@@ -25,7 +25,7 @@ class Post extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return 'Create';
 	}
 
 	/**
@@ -33,9 +33,11 @@ class Post extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 		//
+      var_dump($request['uploads']); die();
+      return 'Store';
 	}
 
 	/**
@@ -69,6 +71,7 @@ class Post extends Controller {
 	public function update($id)
 	{
 		//
+        return 'Update';
 	}
 
 	/**
